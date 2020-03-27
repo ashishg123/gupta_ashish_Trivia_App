@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who is the best cricketer in the world?"
+        android:textSize="20dp"
+        android:textColor="#000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/radioGroup"
+      >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:text="A)Sachin Tendulkar"
+            android:id="@+id/radioButton"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="B)Virat Kolli"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C)Adam Gilchirst"
+            android:layout_marginTop="5dp"
+            android:id="@+id/radioButton3"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25dp"
+             />
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="D)VJacques Kallis"
+            android:id="@+id/radioButton4"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:textSize="25dp"
+             />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/answer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="" />
+
+    <Button
+        android:id="@+id/next_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/button_border"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:text="Next" />
+
+</LinearLayout>
